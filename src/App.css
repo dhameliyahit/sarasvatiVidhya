@@ -1,0 +1,24 @@
+.button-ripple {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.button-ripple::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0%;
+  height: 0%;
+  background-color: rgba(0, 0, 0, 0.1); /* fallback overlay color */
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -1;
+  transition: width 0.5s ease, height 0.5s ease;
+}
+
+.button-ripple:hover::before {
+  width: 300%;
+  height: 300%;
+}
