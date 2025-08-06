@@ -125,6 +125,7 @@ const FounderSection = () => {
 
     const founders = [
         {
+            image: "./asset/pratik.jpg",
             name: "Kenil Togadiya",
             message: `We don't just build teams; we build legacies. Every challenge is an opportunity to redefine what's possible. With bold vision and relentless execution, we create impact that lasts beyond us.\n\nIf you’re ready to rise above average and create meaningful change, we’re excited to meet you.`,
         },
@@ -155,10 +156,21 @@ const FounderSection = () => {
                     <div
                         key={index}
                         className={`rounded-2xl p-6 shadow-lg border-l-4 ${isDark
-                                ? "bg-gradient-to-br from-blue-900 to-blue-700 border-cyan-400"
-                                : "bg-gradient-to-br from-blue-100 to-blue-200 border-blue-600"
+                            ? "bg-gradient-to-br from-blue-900 to-blue-700 border-cyan-400"
+                            : "bg-gradient-to-br from-blue-100 to-blue-200 border-blue-600"
                             }`}
                     >
+                        {/* Conditionally render image if available */}
+                        {founder.image && (
+                            <div className="flex justify-center mb-4">
+                                <img
+                                    src={founder.image}
+                                    alt={founder.name}
+                                    className="w-20 h-20 rounded-full object-cover border-2 border-white shadow-md"
+                                />
+                            </div>
+                        )}
+
                         <div className="text-5xl text-cyan-300 mb-4">“</div>
                         <p className="whitespace-pre-line text-base sm:text-sm md:text-base leading-relaxed mb-6">
                             {founder.message}
@@ -169,6 +181,7 @@ const FounderSection = () => {
                     </div>
                 ))}
             </div>
+
         </section>
     );
 };
