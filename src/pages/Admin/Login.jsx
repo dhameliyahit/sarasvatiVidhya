@@ -8,7 +8,7 @@ import { IoIosEyeOff } from "react-icons/io";
 
 // Sample users
 const users = [
-    { email: "pratik@group.com", password: "Pratik" },
+    { email: "pratik@gmail.com", password: "Pratik" },
     { email: "demo2@example.com", password: "123456" },
     {email:"test@gmail.com",password:"test"}
 ];
