@@ -125,15 +125,17 @@ const FounderSection = () => {
 
     const founders = [
         {
-            image: "./asset/pratik.jpg",
+            image: "./asset/Kelvin_togadiya.jpg",
             name: "Kenil Togadiya",
             message: `We don't just build teams; we build legacies. Every challenge is an opportunity to redefine what's possible. With bold vision and relentless execution, we create impact that lasts beyond us.\n\nIf you’re ready to rise above average and create meaningful change, we’re excited to meet you.`,
         },
         {
+            image: "./asset/pratik.jpg",
             name: "Pratik Bhimani",
             message: `Success is born from curiosity and the courage to act. At our core, we foster a culture where learning never stops and every voice matters. Together, we break barriers and shape the future.\n\nIf you thrive in innovation and value true collaboration, this is your place.`,
         },
         {
+            image: "./asset/KT.jpg",
             name: "Kevin Tarpara",
             message: `Dreams don’t work unless you do — but with purpose and passion, nothing is out of reach. We believe in pushing limits, empowering individuals, and leading with heart.\n\nIf you’re someone who leads by example and learns by doing, let’s create the future together.`,
         },
